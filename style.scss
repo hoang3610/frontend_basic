@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    background-color: #fafafa;
+    padding: 40px 24px;
+}
+
+img {
+    // display: block;
+    // width: 100%;
+}
+
+.tours-container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.tours {
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tour {
+    width: calc(33.33% - 30px);
+    margin-left: 30px;
+    margin-bottom: 2rem;
+    height: auto;
+    background-color: white;
+    word-break: break-word;
+    &-image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;   
+        display: block;     
+        vertical-align: middle; //bo mac dinh khoang trang o duoi cua hinh
+    }
+    &-top {
+        position: relative;
+    }
+    &-price {
+        position: absolute;
+        display: inline-block;
+        top: 2rem;
+        left: 1.5rem;
+        padding: 5px 16px;
+        border-radius: 4px;
+        opacity: 0.8;
+        background: var(--gray-2, #353945);
+        color: var(--black-to-white-travel-travel-ui-8, #FCFCFD);
+        /* caption 12 (medium) */
+        font-family: "DM Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 166.667% */
+    }
+    &-content {
+        padding: 2rem 2rem 1.4rem 2rem;
+    }
+    &-title {
+        margin-bottom: 1rem;
+        color: #23262F;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &-rating {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-review {
+        display: flex;
+        align-items: center;
+    }
+
+    &-review-count {
+        margin-left: 11px;
+    }
+
+    &-review-count,
+    &-duration {
+        color: #3B3E44;
+    }
+    &-button {
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-style: 500;
+        line-height: normal;
+        padding: 8px 17px 9px 17px;
+        color: #F4F5F6;
+        text-decoration: none;
+        background-color: #3B71FE;
+        border-radius: 0.8rem;
+
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .tour {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,18 @@
+mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
+    .tour 
+        .tour-top
+            img.tour-image(src= image, alt="")
+            span.tour-price= price
+        .tour-content
+            .tour-title 
+                h3= title
+            .tour-rating 
+                .tour-review
+                    .tour-star 
+                        img.tour-image-rating(src="./image/Shape.png", alt="tour-rating")
+                    .tour-review-count 
+                        span= review
+                        |  (#{reviewCount} reviews)
+                .tour-duration
+                    span duration: #{duration} hours
+            a.tour-button(href="https://www.checkgia.com") Tours Price: #{tourPrice}$

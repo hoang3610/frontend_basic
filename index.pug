@@ -1,0 +1,21 @@
+include ./pug/mixin
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="reset.css")
+        link(rel="stylesheet", href="style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap", rel="stylesheet")
+        title Practice 
+    body 
+        .tours-container
+            .tours 
+                +tourItem("./image/martyna-bober-yd1_Tupnls4-unsplash.png", "from $40",
+                "Thailands Ayutthaya Temples Cruise from Bangkok", 4.8, 12, 9, 85)
+                +tourItem("./image/martyna-bober-yd1_Tupnls4-unsplash.png", "from $40",
+                "Thailands Ayutthaya Temples Cruise from Bangkok", 4.8, 12, 9, 85)
+                +tourItem("./image/martyna-bober-yd1_Tupnls4-unsplash.png", "from $40",
+                "Thailands Ayutthaya Temples Cruise from Bangkok", 4.8, 12, 9, 85)
